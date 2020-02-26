@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#eeeeee"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:background="@drawable/selector_window" >
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15.0dip"
+            android:background="@null"
+            android:drawablePadding="10.0dip"
+            android:hint="请输入搜索词"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text"
+            android:textColorHint="@color/text"
+            android:textCursorDrawable="@null"
+            android:textSize="15.0dip" />
+
+        <ImageView
+            android:id="@+id/search_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/abc_ic_search_api_mtrl_alpha" />
+    </FrameLayout>
+
+</LinearLayout>

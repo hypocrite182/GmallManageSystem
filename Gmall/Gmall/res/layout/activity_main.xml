@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+<!-- 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1.0">
+	</android.support.v4.view.ViewPager>
+ -->
+
+	 <FrameLayout
+	    android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:background="#ffcdcdcd" />
+
+    <RadioGroup
+        android:id="@+id/act_main_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/act_main_rb_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="0.99"
+            android:button="@null"
+            android:drawablePadding="-2.0dip"
+            android:drawableTop="@drawable/select_zhu"
+            android:gravity="center"
+            android:text="主页" />
+
+        <RadioButton
+            android:id="@+id/act_main_rb_add"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:drawablePadding="-2.0dip"
+            android:drawableTop="@drawable/select_add"
+            android:gravity="center"
+            android:text="添加" />
+	
+        <RadioButton
+            android:id="@+id/act_main_rb_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:drawablePadding="-2.0dip"
+            android:drawableTop="@drawable/select_lei"
+            android:gravity="center"
+            android:text="种类" />
+
+        <RadioButton
+            android:id="@+id/act_main_rb_about"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:drawablePadding="-2.0dip"
+            android:drawableTop="@drawable/select_person"
+            android:gravity="center"
+            android:text="个人" />
+    </RadioGroup>
+
+</LinearLayout>

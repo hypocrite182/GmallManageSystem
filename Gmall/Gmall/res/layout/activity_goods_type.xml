@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+    tools:context="com.example.aaaaaa.GoodsTypeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="商品种类"
+            android:maxWidth="250.0dip"
+            android:minWidth="50.0dip"
+            android:textColor="#ff2a2a2a"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11.0dip"
+            android:gravity="center"
+            android:minWidth="50.0dip"
+            android:text="保存"
+            android:textColor="#ff2a2a2a"
+            android:textSize="15.0sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/cut_off_rule"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:background="#ff43cd80" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow android:layout_width="match_parent" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/type_all"
+                android:src="@drawable/ic_all" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/type_live"
+                android:src="@drawable/ic_live" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/type_phone"
+                android:src="@drawable/ic_phone" />
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/text_all"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="全部分类" />
+
+            <TextView
+                android:id="@+id/text_life"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="生活百货" />
+
+            <TextView
+                android:id="@+id/text_phone"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="数码产品" />
+        </TableRow>
+
+        <TableRow 
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/type_clothing"
+                android:layout_weight="1"
+                android:src="@drawable/ic_clothing" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/type_cos"
+                android:layout_weight="1"
+                android:src="@drawable/ic_make" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/type_toy"
+                android:src="@drawable/ic_toy" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/text_cloth"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="服装" />
+
+            <TextView
+                android:id="@+id/text_cos"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="美妆" />
+
+            <TextView
+                android:id="@+id/text_toy"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="玩具" />
+        </TableRow>
+
+        <TableRow 
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/type_home"
+                android:src="@drawable/ic_ho" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/type_game"
+                android:src="@drawable/ic_game" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/type_book"
+                android:src="@drawable/ic_book" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/text_home"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="房屋租赁" />
+
+            <TextView
+                android:id="@+id/text_game"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="游戏交易" />
+
+            <TextView
+                android:id="@+id/text_study"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="学习用品" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
