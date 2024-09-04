@@ -1,0 +1,3 @@
+[submodule "OSModel"]
+	path = OSModel
+	url = https://github.com/hypocrite182/OSModel
